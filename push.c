@@ -36,7 +36,7 @@ void t_push(stack_t **stack, unsigned int line_number)
 	if (argument == NULL || has_non_digit(argument))
 	{
 		dprintf(STDOUT_FILENO,
-				"L%u: Usage: push integer\n",
+				"L%u: usage: push integer\n",
 				line_number);
 		exit(EXIT_FAILURE);
 	}
