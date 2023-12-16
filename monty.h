@@ -56,6 +56,27 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+void t_add(stack_t **stack, unsigned int line_number);
+void t_div(stack_t **stack, unsigned int line_number);
+void t_mod(stack_t **stack, unsigned int line_number);
+void t_pop(stack_t **stack, unsigned int line_number);
+void t_mul(stack_t **stack, unsigned int line_number);
+void t_nop(stack_t **stack, unsigned int line_number);
+void t_sub(stack_t **stack, unsigned int line_number);
+void t_pall(stack_t **stack, unsigned int line_number);
+void t_pstr(stack_t **stack, unsigned int line_number);
+void t_rotr(stack_t **stack, unsigned int line_number);
+void t_swap(stack_t **stack, unsigned int line_number);
+void t_push(stack_t **stack, unsigned int line_number);
+void t_rotl(stack_t **stack, unsigned int line_number);
+void t_pint(stack_t **stack, unsigned int line_number);
+void t_free_stack(int exit_status, void *stack_ptr);
+void t_pchar(stack_t **stack, unsigned int line_number);
+void set_stack(stack_t **stack, unsigned int line_number);
+void set_queue(stack_t **stack, unsigned int line_number);
+void t_close_file_stream(int exit_status, void *file_stream_ptr);
+void t_free_line_pointer(int exit_status, void *line_pointer);
+stack_t *add_node_to_list(stack_t **list, const int value);
+void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number);
 
 #endif /* _MONTY_H_ */
