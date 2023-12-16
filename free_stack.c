@@ -20,7 +20,7 @@ void t_free_stack(int exit_status, void *stack_ptr)
 	{
 		(*stack)->prev->next = NULL;
 		(*stack)->prev = NULL;
-	
+
 	}
 
 	while (*stack != NULL)

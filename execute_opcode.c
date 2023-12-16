@@ -34,11 +34,11 @@ void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number)
 
 	for (i = 0; valid_opcodes[i].opcode != NULL; i++)
 	{
-	       if (strcmp(valid_opcodes[i].opcode, opcode) == 0)
-	       {
-		       valid_opcodes[i].f(stack, line_number);
-		       return;
-	       }
+		if (strcmp(valid_opcodes[i].opcode, opcode) == 0)
+		{
+			valid_opcodes[i].f(stack, line_number);
+			return;
+		}
 	}
 
 	dprintf(STDOUT_FILENO,

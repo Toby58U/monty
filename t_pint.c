@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * t_pint - Prints the value on top of the stack, or exits if the stack is empty.
+ * t_pint - Prints the value on top of the stack,
+ * or exits if the stack is empty.
  * @stack: Double pointer to the head of the stack.
  * @line_number: Line number of the current operation.
  *

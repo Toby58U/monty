@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * t_sub - Subtracts the top element of the stack from the next element and pushes the result.
+ * t_sub - Subtracts the top element of the stack
+ * from the next element and pushes the result.
  * @stack: Double pointer to the head of the stack.
  * @line_number: Line number of the current operation.
  *
